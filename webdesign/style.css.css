@@ -25,9 +25,15 @@
         align-items: center;
     }
 
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .logo img {
         width: 180px;
-        border-radius: 50px;
+        border-radius: 60px;
     }
 
     .nav-list li {
@@ -36,7 +42,7 @@
     }
 
     .nav-list li a {
-        text-decoration: none;
+        text-decoration: tan;
         color:wheat;
     }
 
@@ -56,13 +62,20 @@
         border-radius: 9px;
     }
 
+    .body {
+        background: rgb(131,58,180);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 100%, rgba(252,176,69,1) 100%);
+    }
+        
     .firstsection {
-        background-color: green;
+        background-color:  rgb(131,58,180);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 100%, rgba(252,176,69,1) 100%);
         height: 400px;
     }
 
     .secondsection {
-        background-color: blue;
+        background-color:  rgb(131,58,180);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 100%, rgba(252,176,69,1) 100%);
         height: 400px;
     }
 
@@ -73,7 +86,7 @@
         color: black;
         max-width: 80%;
         margin: auto;
-        height: 80%
+        height: 80%;
     }
 
     .firsthalf {
@@ -83,9 +96,14 @@
         justify-content: center;
     }
 
+    .secondhalf {
+        width: 30%;
+    }
+
     .secondhalf img {
-        width: 70;
-        border: 4px solid white;
+        width: 70%;
+        border: 4px solid orange;
+        border-radius: 150px;
         display: block;
         margin: auto;
     }
@@ -97,7 +115,7 @@
     }
 
     .text-small {
-        font-size:18px;
+        font-size: 18px;
     }
 
     .btn {

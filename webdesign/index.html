@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 
+<html>
+
 <head>
-    <tittle>
+    <title>
         Simple web Development Template
-    </tittle>
+    </title>
     <link rel="stylesheet" href="style.css.css">
     
 </head>
 
 <body>
+    <body class="body">
     <nav class="navbar background">
         <ul class="nav-list">
             <div class="logo">
-                <img src="logo.png">
+                <img src="logo.jpg">
             </div>
             <li><a href="#web">Web Technology</a></li>
             <li><a href="#program">C Programing</a></li>
@@ -21,18 +24,18 @@
 
         <div class="rightNav">
             <input type="text" name="search" id="search">
-            <button class="btn btn-sm"></button>
+            <button class="btn btn-sm" onclick="greet()">greet</button>
         </div>
         </nav>
 
     <section class="firstsection">
         <div class="box-main">
             <div class="firsthalf">
-                <h1 class="text-small">
+                <h1 class="text-small" id="web">
                     Web Technology
                 </h1>
 
-                <p class="textll">
+                <p class="text-small">
                     HTML stands for HyperText Markup
                     Language. It is used to design
                     web pages using a markup language. HyperText
@@ -96,7 +99,7 @@
         </div>
 
     <div class="thumbnail">
-        <img src="img.png" alt="laptop image">
+        <img src="image.jpg">
     </div>
     </section>
     
@@ -108,6 +111,8 @@
 
 
     </footer>
-</body>
+    <script src="script.js"></script>
+    </body>
+
 
 </html>
