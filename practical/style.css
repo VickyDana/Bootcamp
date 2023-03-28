@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    Cursor: pointer;
+
+}
+
+.rightnav {
+    width: 40%;
+    text-align: right;
+}
+
+.background {
+    background-color: violet;
+    background-size: cover;
+
+}
+
+#search {
+    padding: 7px;
+    font-size: 20px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.body {
+    background: peachpuff;
+    
+}
+
+.firstsection {
+    background-color: aqua;
+    height: 150px;
+}
+
+.nav-list {
+    width: 20%;
+    display: calc();
+    align-items: center;
+}
+
+.text-small {
+    font-size: 18px;
+    color: black
+}
+
+.firsthalf {
+
+}
+
