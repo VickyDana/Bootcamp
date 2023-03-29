@@ -20,15 +20,31 @@
 
 .background {
     background-color: violet;
-    background-size: cover;
+    background-blend-mode: darken;
+    background-size: cover ;
 
 }
 
+.nav-list {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
 #search {
-    padding: 7px;
+    padding: 15px;
     font-size: 20px;
     border: 2px solid grey;
     border-radius: 9px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 30px 32;
+}
+
+.nav-list li a {
+    text-decoration: tan;
 }
 
 .body {
@@ -37,7 +53,7 @@
 }
 
 .firstsection {
-    background-color: aqua;
+    background-color:peachpuff;
     height: 150px;
 }
 
