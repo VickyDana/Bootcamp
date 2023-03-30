@@ -39,7 +39,7 @@ if (a > 10) {
 }
 */
 
-let a= 4;
+/*let a= 4;
 let b= 12;
 let c= 8;
 
@@ -50,6 +50,64 @@ if (a > b && a > c) {
 }else if (c > a && c > b) {
     console.log("c is a middle number")
 }
+*/
+
+
+/*function submit() {
+
+    let number = document.getElementById("submit").value 
+    
+    if (number%2===0) {
+        alert("this is an even number" +" "+ number)
+    }
+    else{
+         alert ("this is an odd number" +" "+ number)
+    }
+  }
+  */
+    
+//let a= 8;
+
+/*if (a % 2 === 0 ) {
+    console.log(" even number")
+}else if(a % 2 === 1 ) {
+    console.log("odd number")
+}
+*/
+let numbers= [2,9,11,7,5,3,4,8,15]
+
+for(let i=1; i <= numbers.length;i++){
+    if(numbers [i] % 2 ===1){
+    console.log(numbers[i])
+    }
+}
+
+/*for(let i=0; i <= numbers.length;i++){
+    if(numbers [i] % 2 ===0){
+     console.log(numbers [i])
+    }
+}*/
+
+//console.log(numbers[3)
+
+/*for(let i =0; i <= 9; i ++) {
+    console.log(i)
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
