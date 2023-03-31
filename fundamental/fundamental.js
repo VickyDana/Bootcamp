@@ -74,13 +74,13 @@ if (a > b && a > c) {
     console.log("odd number")
 }
 */
-let numbers= [2,9,11,7,5,3,4,8,15]
+/*let numbers= [2,9,11,7,5,3,4,8,15]
 
-for(let i=1; i <= numbers.length;i++){
-    if(numbers [i] % 2 ===1){
+for(let i=0; i < numbers.length;i++){
+    if(numbers [i] % 2 ===0){
     console.log(numbers[i])
     }
-}
+}*/
 
 /*for(let i=0; i <= numbers.length;i++){
     if(numbers [i] % 2 ===0){
@@ -94,6 +94,21 @@ for(let i=1; i <= numbers.length;i++){
     console.log(i)
 
 }*/
+
+ /*fname= ["vicky","uviwe","dana"]
+
+for(let i=0; fname.length; i++) {
+    if(fname[i]== "vicky" || fname[i]=="dana"){
+        console.log(fname[i].charAt(3));
+
+    }
+}
+
+console.log(fname[i]);*/
+
+//let arr2d= [[0,2,4],[1,3,5][3,6,9][7,9,10]]
+  //for(let i=2;arr2d.length; i++
+
 
 
 
