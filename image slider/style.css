@@ -1,0 +1,37 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  */
+}
+/* 
+.background {
+    background: purple;
+    background-blend-mode: darken; */
+    /* background-size: ; */
+}
+
+/* .btn {
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid wheat;
+    border-radius: 8px;
+    background: none;
+    color: blueviolet;
+    cursor: pointer;
+/} */
+
+
+.next {
+  cursor: pointer;
+  position: ;
+  top: 20%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}

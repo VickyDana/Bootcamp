@@ -100,13 +100,15 @@ console.log(emailGen("uviwe dana"))*/
 
  //Spread-Operator
 
-let num1=[1,3,5,7]
-let num2=[0,2,4,6]
-let num3=[num1 ,num2]
-let num4= num1.concat(num2)
+// let num1=[1,3,5,7]
+// let num2=[0,2,4,6]
+// let num3=[num1 ,num2]
+// let num4= num1.concat(num2)
 
-console.log("This is num3", num3)
-console.log("This is num4", num4)
+// console.log("This is num3" ,num3)
+// console.log("This is num4" ,num4)
+
+
 
     
 
