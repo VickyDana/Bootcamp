@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+     background: none; 
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    
+    
+}
+
+h1{
+    
+    text-align: center;
+}
+
+body {
+    align-content: center;
+    
+}

@@ -1,4 +1,4 @@
- function calcAge (startYear,endYear){
+ /*function calcAge (startYear,endYear){
     
     let = document.getElementById("fahrenheits").value 
 
@@ -14,26 +14,29 @@ if(Age < 0){
     console.log(Age)
 }
 
-calcAge()
+calcAge()*/
 
-/*function calcAge () {
+function calcAge () {
     
     let bornYear  = document.getElementById("bornYear").value 
-    let age= 2023-bornYear
+    
+    let age = (2023-bornYear)
     
     if(age < 0){
-        alert ("Age can not be a negative number");
+        alert("Age can not be a negative number");
     }
     else if(!bornYear) {
-        alert ("Please enter your born year");
-    } else {
-        alert ("age");
-
+        alert("Please enter born year");
+    } 
+     else if(bornYear < 0){
+         alert("bornYear can not be less than zero");
+     }
+    else {
+        alert(age)
     }
-    
-    }*/
+    }
+    calcAge()
     
     
 
 
-//console.log(calcAge(2002,2023))

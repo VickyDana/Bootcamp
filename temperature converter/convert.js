@@ -55,7 +55,10 @@
         let celsius = (fahrenheits-32) * 5/9;
 
         
-        if (celsius < 16) {
+        if (celsius < 273,15){
+            alert("It cannot be cold to this level" +" "+ celsius)
+        }
+        else if   ( celsius < 16) {
         
         alert( "Its cold, wear Jacket" +" "+ celsius)
         }
@@ -63,7 +66,7 @@
              alert ("Its warm, wear T-shirt & Jeans" +" "+ celsius)
         }
         else {
-            alert ("Its hot, wear shorts" +" "+ celsius);
+             alert ("Its hot, wear shorts" +" "+ celsius);
         }
         
       }

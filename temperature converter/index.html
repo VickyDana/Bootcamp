@@ -5,12 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="conv.css">
 </head>
+
 <body>
-    <input type="text" placeholder="enter number" name="number" id="fahrenheits">
+   <section class="content">
+    <h1>
+        TEMPERATURE CONVERTER <span>
+            (F<sup>0</sup>
+            To
+            C <sup>
+                0
+            </sup>
+            )
+        </span>
+        <hr>
+    </h1>
+    
+    <br>
+    <input type="number" placeholder="Enter number" name="number" id="fahrenheits">
     <button class="btn btn-sm" onclick="convertTemp()">submit</button>
 
+   </section>
 
     <script src="convert.js"></script>
 
