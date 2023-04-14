@@ -52,21 +52,25 @@
     function convertTemp() {
 
         let fahrenheits = document.getElementById("fahrenheits").value 
-        let celsius = (fahrenheits-32) * 5/9;
-
+        let Temp = document.getElementById("Temp")
+        let celsius = (fahrenheits-32) * (5/9);
         
-        if (celsius < 273,15){
-            alert("It cannot be cold to this level" +" "+ celsius)
+        Temp.innerHTML = celsius
+        if(!fahrenheits){
+            Temp.innerHTML =("Please enter value")
+        }
+        else if (celsius < -273.15){
+            Temp.innerHTML = ("It cannot be cold to this level" +" "+ celsius)
         }
         else if   ( celsius < 16) {
         
-        alert( "Its cold, wear Jacket" +" "+ celsius)
+        Temp.innerHTML = ( "Its cold, wear Jacket" +" "+ celsius)
         }
         else if (celsius > 16 &&  celsius <= 21) {
-             alert ("Its warm, wear T-shirt & Jeans" +" "+ celsius)
+             Temp.innerHTML = ("Its warm, wear T-shirt & Jeans" +" "+ celsius)
         }
         else {
-             alert ("Its hot, wear shorts" +" "+ celsius);
+             Temp.innerHTML = ("Its hot, wear shorts" +" "+ celsius);
         }
         
       }

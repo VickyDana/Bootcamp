@@ -8,26 +8,38 @@ h1 {
     text-align: center;
 }
 
- body{
+ body {
     
-    border: 2px solid whitesmoke;
-    border-radius: 10px;
-    margin: 23;
-     background: black; 
+    border: 8px solid whitesmoke; 
+    border-radius: 3px; 
+    margin: 6;
+    background: black; 
     color: black;
     cursor: pointer;
     text-align: center;
+    justify-content: center;
+    align-items: center;
  }
 
  .btn{
     
-    border: 2px solid whitesmoke;
-    border-radius: 8px;
+    
      background: none; 
     color: black;
     cursor: pointer;
     text-align: center;
+    size: 0;
+    height: 300px;
 
+ }
+
+ img{
+    border-image: round;
+    margin-bottom: 12;
+    padding: 700;
+    margin: 39;
+    
+    
  }
 
 

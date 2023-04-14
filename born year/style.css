@@ -1,6 +1,7 @@
 *{
-    margin: 0;
-    padding:0;
+    margin: 30;
+    padding: 700;
+    box-sizing: border-box;
 }
 
 .btn {
@@ -11,8 +12,8 @@
      background: none; 
     color: black;
     cursor: pointer;
-    text-align: center;
-    
+    text-align:  center;
+    align-items: center;
     
 }
 
@@ -21,7 +22,20 @@ h1{
     text-align: center;
 }
 
+input {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none !important;
+}
+
+
 body {
-    align-content: center;
-    
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(176,184,41,1) 0%, rgba(41,222,59,1) 100%, rgba(253,187,45,1) 100%);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+
 }

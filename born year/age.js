@@ -18,21 +18,24 @@ calcAge()*/
 
 function calcAge () {
     
-    let bornYear  = document.getElementById("bornYear").value 
+    let bornYear  = document.getElementById("bornYear").value
+    let birthDate = document.getElementById("birthDate") 
     
     let age = (2023-bornYear)
+
+    birthDate.innerHTML = age
     
     if(age < 0){
-        alert("Age can not be a negative number");
+        birthDate.innerHTML = ("Age cannot be a negative number");
     }
     else if(!bornYear) {
-        alert("Please enter born year");
+        birthDate.innerHTML = ("Please enter born year");
     } 
      else if(bornYear < 0){
-         alert("bornYear can not be less than zero");
+         birthDate.innerHTML = ("bornYear cannot be less than zero");
      }
     else {
-        alert(age)
+        birthDate.innerHTML = (age)
     }
     }
     calcAge()

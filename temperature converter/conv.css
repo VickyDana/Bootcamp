@@ -31,7 +31,7 @@
         margin: 7px 0;
         border: 2px solid whitesmoke;
         border-radius: 8px;
-        /* background: none; */
+         background: none; 
         color: black;
         cursor: pointer;
     }
