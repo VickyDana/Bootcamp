@@ -16,28 +16,70 @@ if(Age < 0){
 
 calcAge()*/
 
+let array;
+
+ if(localStorage.getItem("age")){
+    array=JSON.parse(localStorage.getItem("age"))
+ }
+ else {
+    array.push(v)
+
+    
+    // array=[]
+ }
+ 
+ function remove(){
+
+    for(let index=0; index < array.length; index++)
+
+    
+    array.splice(index,1)
+    localStorage.setItem("age", JSON.stringify(array))
+    // window.location.reload();
+ }
+
 function calcAge () {
     
-    let bornYear  = document.getElementById("bornYear").value
-    let birthDate = document.getElementById("birthDate") 
+     let bornYear  = document.getElementById("bornYear").value
+    // let birthYear = document.getElementById("birthDate") 
+    // let results = document.getElementById("results").value
     
-    let age = (2023-bornYear)
+    let age= new Date();
+    let currentYear= age.getFullYear();
 
-    birthDate.innerHTML = age
+    let v= (currentYear - bornYear)
+    results = document.getElementById("results")
+    // results.innerHTML= v
+     array.push(v)
     
-    if(age < 0){
-        birthDate.innerHTML = ("Age cannot be a negative number");
-    }
-    else if(!bornYear) {
-        birthDate.innerHTML = ("Please enter born year");
+
+    localStorage.setItem("age",JSON.stringify(array))
+
+    // birthYear.innerHTML = age
+    
+    // if(age < 0){
+    //     birthYear.innerHTML = ("Age cannot be a negative number");
+    if (bornYear== "" || array == null) {
+      return  results.innerHTML = ("Please enter born year");}
+    else if(bornYear < 0){
+      return  results.innerHTML = ("born year  cannot be less than zero");
     } 
-     else if(bornYear < 0){
-         birthDate.innerHTML = ("bornYear cannot be less than zero");
+    else if(bornYear < 1900) {
+       return results.innerHTML = ("born year should not be greater than 1900");
+    }
+    else if(bornYear > currentYear) {
+       return  results.innerHTML = ("born year cannot be more than a current year");
+    }
+    else if(innerHTML= 0) {
+         innerHTML 
      }
-    else {
-        birthDate.innerHTML = (age)
-    }
-    }
+     else {
+        return results.innerHTML = (v)
+     }
+
+     }
+    
+    
     calcAge()
     
     

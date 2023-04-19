@@ -21,26 +21,21 @@ h1 {
     align-items: center;
  }
 
- .btn{
-    
-    
-     background: none; 
+ .btn {
+    background: none; 
     color: black;
     cursor: pointer;
     text-align: center;
     size: 0;
     height: 300px;
-
  }
 
- img{
+ img {
     border-image: round;
     margin-bottom: 12;
-    padding: 700;
-    margin: 39;
-    
-    
  }
+
+ 
 
 
 

@@ -1,34 +1,51 @@
 
-// let mySlides= document. querySelector(".mySlides");
-// let foward= document. querySelector(".foward");
-// let previous= document. querySelector(".previous");
+  //  let images=["rainbow1.jpg","rainbow2.jpg","rainbow3.jpg","rainbow4.jpg","rainbow5.jpg"]
 
+let images;
 
- let images=["rainbow1.jpg","rainbow2.jpg","rainbow3.jpg", "rainbow4.jpg","rainbow5.jpg"]
- let index = 0;
- img= document.getElementById('image')
- 
+if(sessionStorage.getItem("items")) {
 
+  images = JSON.parse(sessionStorage.getItem("items"))
+}
+
+else  {
+
+  images =["rainbow1.jpg","rainbow2.jpg","rainbow3.jpg","rainbow4.jpg","rainbow5.jpg"]
+
+}
+  let index = 0;
+  img= document.getElementById('image')
  
  function Attach() {
-  // console.log(images)
-  
- 
 
   let slider= document.getElementById("slider").value
-   images.push(slider)
-    // console.log(images)
-  sessionStorage.setItem("A",JSON.stringify (images))
-  
-  
-  sessionStorage.getItem("A", JSON.parse)
-  
+  if(slider == "" || images == null) {
 
-  
- }
+     return alert("button link cannot be empty")
+  }
 
+ for(let index =0; index < images.length; index++) 
+
+ if(slider == images[index]){
+  
+    return alert("image already exist")
+  }  
+       
+    images.push(slider)
+      document.getElementById("slider").value ='',
+    sessionStorage.setItem("items",JSON.stringify(images))
+    window.location.reload();
+    // sessionStorage.getItem("items")
+        
+  }
+
+  function Remove() {
+    images.splice(index,1)
+    sessionStorage.setItem("items", JSON.stringify(images))
+    window.location.reload();
+
+  }
  
-
  function next() {
     index ++
     if(index >=images.length){
@@ -46,7 +63,7 @@
  }
 
 
- 
+//  Automatic slide
 
 //  let index = 0;
 //   image();
@@ -62,9 +79,3 @@
 //   image[index-1].style.display = "block";
 //   setTimeout(image, 2000); 
 // }
-
-
- 
-
-
-
